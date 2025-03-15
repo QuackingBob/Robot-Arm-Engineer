@@ -17,8 +17,8 @@ void Chassis_Task_Init()
 
     DM_Motor_Config_t config = {
         .can_bus=1,
-        .rx_id=0x15;
-        .tx_id=0x05;
+        .rx_id=0x15,
+        .tx_id=0x05,
         .disable_behavior=DM_MOTOR_HARDWARE_DISABLE,
         .kp=1,
         .kd=1
