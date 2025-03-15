@@ -84,6 +84,7 @@ void Handle_Enabled_State()
 void Handle_Disabled_State()
 {
     DJI_Motor_Disable_All();
+    Chassis_Disable();
     //  Disable all major components
     g_robot_state.launch.IS_FLYWHEEL_ENABLED = 0;
     g_robot_state.chassis.x_speed = 0;
